@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="styleSheet" href="style.css">
+    <title>Matsuoka Nao</title>
+</head>
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+           <a href="#"><img src="cat.png" width="200" height="150" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Name</a></li>
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">Target</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2><span>SIMPLE</span></h2>
+                <p>紹介文をかく<br>
+                    紹介文二段目</p>
+                <a href="https://stark-hamlet-44140.herokuapp.com/">Show More</a>
+            </div>
+        
+        <div class="imgBox">
+            <img src="simple.png" width="300" height="500" class="products">
+        </div>
+        </div>
+
+        <ul class="thumb">
+
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('simple.png');ChangeCircleColor('#f4a261')"></li>
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('github.png');ChangeCircleColor('#1d3557')"></li>
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('q.png');ChangeCircleColor('#9c6644')"></li>
+
+        </ul>
+
+        <ul class="sci">
+
+            <li><a href="#"><img src="twitter.png" width="50" height="50"></a></li>
+            <li><a href="#"><img src="instagram.png" width="50" height="50"></a></li>
+            <li><a href="https://github.com/matsuokanao"><img src="github.png" width="50" height="50"></a></li>
+            <li><a href="#"><img src="q.png" width="50" height="50"></a></li>
+
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+    function imgSlider(anything){
+        //任意のHTML要素を検出・取得
+        document.querySelector('.products').src = anything;
+    }
+    function ChangeCircleColor(color){
+        const circle =document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
