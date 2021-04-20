@@ -51,14 +51,21 @@
     </section>
 
     <script type="text/javascript">
+    //写真が変更
     function imgSlider(anything){
-        //任意のHTML要素を検出・取得
         document.querySelector('.products').src = anything;
     }
+    //サークルのカラーが変更する
     function ChangeCircleColor(color){
-        const circle =document.querySelector('.circle');
+        const circle = document.querySelector('.circle');
         circle.style.background = color;
     }
+    //クリックすると文字が変更する
+    function ChangeText(text) {
+            const Text = document.querySelector('.textBox');
+            Text.style.background = color;
+        }
+    //クリックすると文字の色が変更する
     </script>
 </body>
 </html>
