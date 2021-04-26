@@ -21,10 +21,12 @@
 
         <div class="content">
             <div class="textBox">
-                <h2><span>SIMPLE</span></h2>
-                <p>紹介文をかく<br>
+                <h2><span id="texts">SIMPLE</h2>
+                <p><span id="stexts">紹介文をかく<br>
                     紹介文二段目</p>
+                 </span>
                 <a href="https://stark-hamlet-44140.herokuapp.com/">Show More</a>
+                </span>
             </div>
         
         <div class="imgBox">
@@ -34,9 +36,14 @@
 
         <ul class="thumb">
 
-            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('simple.png');ChangeCircleColor('#f4a261')"></li>
-            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('github.png');ChangeCircleColor('#1d3557')"></li>
-            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('q.png');ChangeCircleColor('#9c6644')"></li>
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('simple.png');ChangeCircleColor('#f4a261');
+            ChangeText(text1);ChangeStext(stext1)"></li>
+
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('github.png');ChangeCircleColor('#1d3557');
+            ChangeText(text2);ChangeStext(stext2)"></li>
+
+            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('q.png');ChangeCircleColor('#9c6644');
+            ChangeText(text3);ChangeStext(stext3)"></li>
 
         </ul>
 
@@ -51,21 +58,35 @@
     </section>
 
     <script type="text/javascript">
+
     //写真が変更
     function imgSlider(anything){
         document.querySelector('.products').src = anything;
     }
+
     //サークルのカラーが変更する
     function ChangeCircleColor(color){
         const circle = document.querySelector('.circle');
         circle.style.background = color;
     }
-    //クリックすると文字が変更する
+
+    //題名変更
+    var text1 = "SIMPLE";
+    var text2 = "TELL";
+    var text3 = "Carrom";
+
     function ChangeText(text) {
-            const Text = document.querySelector('.textBox');
-            Text.style.background = color;
+        document.getElementById("texts").innerHTML = text;
         }
-    //クリックすると文字の色が変更する
-    </script>
-</body>
+
+    //紹介文変更
+        var stext1 = "SIMPLE<br>ああ";
+        var stext2 = "TELL<br>ああ";
+        var stext3 = "Carrom<br>ああ";
+
+        function ChangeStext(stext) {
+            document.getElementById("stexts").innerHTML = stext;
+        }
+     </script>
+　</body>
 </html>
