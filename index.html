@@ -25,7 +25,7 @@
                 <p><span id="stexts">紹介文をかく<br>
                     紹介文二段目</p>
                  </span>
-                <a href="https://stark-hamlet-44140.herokuapp.com/">Show More</a>
+                <a id="link" href="https://stark-hamlet-44140.herokuapp.com/">Show More</a>
                 </span>
             </div>
         
@@ -40,7 +40,7 @@
             ChangeText(text1);ChangeStext(stext1)"></li>
 
             <li><img src="simple.png" width="50" height="50" onclick="imgSlider('github.png');ChangeCircleColor('#1d3557');
-            ChangeText(text2);ChangeStext(stext2)"></li>
+            ChangeText(text2);ChangeStext(stext2);changeHref()"></li>
 
             <li><img src="simple.png" width="50" height="50" onclick="imgSlider('q.png');ChangeCircleColor('#9c6644');
             ChangeText(text3);ChangeStext(stext3)"></li>
@@ -87,6 +87,17 @@
         function ChangeStext(stext) {
             document.getElementById("stexts").innerHTML = stext;
         }
+
+        //色を変更
+
+
+        //リンク先を変更
+        const target = document.getElementById("link")
+
+            const changeHref = () => {
+                target.href = "https://www.yahoo.co.jp"
+                target.textContent = "Yahoo"
+            }
      </script>
 　</body>
 </html>
