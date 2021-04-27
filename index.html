@@ -30,29 +30,29 @@
             </div>
         
         <div class="imgBox">
-            <img src="simple.png" width="300" height="500" class="products">
+            <img src="simple.png"  class="products">
         </div>
         </div>
 
         <ul class="thumb">
 
             <li><img src="simple.png" width="50" height="50" onclick="imgSlider('simple.png');ChangeCircleColor('#f4a261');
-            ChangeText(text1);ChangeStext(stext1)"></li>
+            ChangeText(text1);ChangeStext(stext1);changeLink(link1)"></li>
 
-            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('github.png');ChangeCircleColor('#1d3557');
-            ChangeText(text2);ChangeStext(stext2);changeHref()"></li>
+            <li><img src="Tell.png" width="50" height="50" onclick="imgSlider('Tell.png');ChangeCircleColor('#1d3557');
+            ChangeText(text2);ChangeStext(stext2);changeLink(link2)"></li>
 
-            <li><img src="simple.png" width="50" height="50" onclick="imgSlider('q.png');ChangeCircleColor('#9c6644');
-            ChangeText(text3);ChangeStext(stext3)"></li>
+            <li><img src="Carrom.png" width="50" height="50" onclick="imgSlider('Carrom.png');ChangeCircleColor('#9c6644');
+            ChangeText(text3);ChangeStext(stext3);changeLink(link3)"></li>
 
         </ul>
 
         <ul class="sci">
 
-            <li><a href="#"><img src="twitter.png" width="50" height="50"></a></li>
+            <li><a href="https://twitter.com/matsuokanao_"><img src="twitter.png" width="50" height="50"></a></li>
             <li><a href="#"><img src="instagram.png" width="50" height="50"></a></li>
             <li><a href="https://github.com/matsuokanao"><img src="github.png" width="50" height="50"></a></li>
-            <li><a href="#"><img src="q.png" width="50" height="50"></a></li>
+            <li><a href="https://qiita.com/matsuokanao"><img src="q.png" width="50" height="50"></a></li>
 
         </ul>
     </section>
@@ -94,9 +94,12 @@
         //リンク先を変更
         const target = document.getElementById("link")
 
-            const changeHref = () => {
-                target.href = "https://www.yahoo.co.jp"
-                target.textContent = "Yahoo"
+        var link1 = "https://stark-hamlet-44140.herokuapp.com/";
+        var link2 = "https://lit-oasis-15875.herokuapp.com/";
+        var link3 = "https://qiita.com/matsuokanao/items/d5a043fd3541071e9bf6"
+
+            function changeLink(link){
+                target.href = link;
             }
      </script>
 　</body>
