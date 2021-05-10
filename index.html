@@ -35,15 +35,16 @@
         </div>
 
         <ul class="thumb">
+            <li><h3>click！➡︎</h3></li>
 
             <li><img src="simple.png" width="50" height="50" onclick="imgSlider('simple.png');ChangeCircleColor('#f4a261');
-            ChangeText(text1);ChangeStext(stext1);changeLink(link1)"></li>
+            ChangeText(text1);ChangeStext(stext1);changeLink(link1);ChangeTextColor('#f4a261')"></li>
 
             <li><img src="Tell.png" width="50" height="50" onclick="imgSlider('Tell.png');ChangeCircleColor('#1d3557');
-            ChangeText(text2);ChangeStext(stext2);changeLink(link2)"></li>
+            ChangeText(text2);ChangeStext(stext2);changeLink(link2);ChangeTextColor('#1d3557')"></li>
 
             <li><img src="Carrom.png" width="50" height="50" onclick="imgSlider('Carrom.png');ChangeCircleColor('#9c6644');
-            ChangeText(text3);ChangeStext(stext3);changeLink(link3)"></li>
+            ChangeText(text3);ChangeStext(stext3);changeLink(link3);ChangeTextColor('#9c6644')"></li>
 
         </ul>
 
@@ -89,7 +90,10 @@
         }
 
         //色を変更
-
+            function ChangeTextColor(textcolor) {
+                    document.getElementById("texts").style.color = textcolor;
+                    document.getElementById("texts").style.color = textcolor;
+           }
 
         //リンク先を変更
         const target = document.getElementById("link")
