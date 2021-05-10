@@ -62,18 +62,18 @@ header ul li a {
 	font-weight: 500;
 }
 .content .textBox h2 span {
-	color: #f4a261;
+	color: #e76f51;
 	font-size: 1.2em;
 	font-weight: 900;
 }
 .content .textBox p {
-	color: #f4a261;
+	color: #e76f51;
 }
 .content .textBox a {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 8px 20px;
-	background: #f4a261;
+	background: #e76f51;
 	color: #fff;
 	border-radius: 40px;
 	font-weight: 500;
@@ -134,7 +134,7 @@ header ul li a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #f4a261;
+	background: #e76f51;
 	clip-path: circle(700px at right 800px);
 }
 
@@ -164,7 +164,7 @@ header ul li a {
 		justify-content: center;
 	}
 	.content .imgBox img {
-		max-width: 300px;
+		max-width: 240px;
 	}
 	.thumb li img {
 		max-width: 40px;
