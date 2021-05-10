@@ -81,7 +81,6 @@ header ul li a {
 	text-decoration: none;
 }
 .content .imgBox {
-	width: 500px;
 	display: flex;
 	justify-content: flex-start;
 	padding-right: 50px;
@@ -137,4 +136,47 @@ header ul li a {
 	height: 100%;
 	background: #f4a261;
 	clip-path: circle(700px at right 800px);
+}
+
+@media (max-width: 991px) {
+	heading {
+		padding: 20px;
+	}
+	header.logo {
+		max-width: 40px;
+	}
+	header ul {
+		display: none;
+	}
+	section {
+		padding: 20px 20px 120px;
+	}
+	.content {
+		flex-direction: column;
+		margin-top: 100px;
+	}
+	.content .textBox h2 {
+		color: #333;
+		font-size: 2.5em;
+	}
+	.content .textBox {
+		max-width: 100%;
+		justify-content: center;
+	}
+	.content .imgBox img {
+		max-width: 300px;
+	}
+	.thumb li img {
+		max-width: 40px;
+	}
+	.circle {
+		clip-path: circle(400px at center bottom);
+	}
+	.sci {
+		background: #333;
+		right: 0;
+		width: 50px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
 }
