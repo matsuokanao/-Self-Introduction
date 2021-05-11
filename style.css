@@ -87,6 +87,7 @@ header ul li a {
 }
 .content .imgBox img {
 	max-width: 340px;
+	margin-right: 150px;
 }
 .thumb {
 	position: absolute;
@@ -164,6 +165,7 @@ header ul li a {
 	}
 	.content .imgBox img {
 		max-width: 300px;
+		margin-right: 20px;
 	}
 	.thumb li img {
 		max-width: 40px;
@@ -180,7 +182,7 @@ header ul li a {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 991px) {
 	heading {
 		padding: 20px;
 	}
@@ -206,9 +208,8 @@ header ul li a {
 		justify-content: center;
 	}
 	.content .imgBox img {
-		height: 100px;
-		width: 52vw;
-		margin-bottom: 20px;
+		max-width: 300px;
+		max-height: 350px;
 	}
 	.thumb li img {
 		max-width: 40px;
