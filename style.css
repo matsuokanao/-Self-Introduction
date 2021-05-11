@@ -164,7 +164,7 @@ header ul li a {
 		justify-content: center;
 	}
 	.content .imgBox img {
-		max-width: 300px;
+		max-width: 200px;
 		margin-right: 20px;
 	}
 	.thumb li img {
@@ -220,7 +220,7 @@ header ul li a {
 	.sci {
 		background: #333;
 		right: 0;
-		width: 50px;
+		width: 35px;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 	}
