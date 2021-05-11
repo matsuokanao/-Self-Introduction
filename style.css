@@ -182,7 +182,7 @@ header ul li a {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 790px) {
 	heading {
 		padding: 20px;
 	}
