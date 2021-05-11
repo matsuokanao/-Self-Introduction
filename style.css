@@ -164,7 +164,7 @@ header ul li a {
 		justify-content: center;
 	}
 	.content .imgBox img {
-		max-width: 200px;
+		max-width: 300px;
 		margin-right: 20px;
 	}
 	.thumb li img {
@@ -182,7 +182,7 @@ header ul li a {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 448px) {
 	heading {
 		padding: 20px;
 	}
@@ -208,8 +208,8 @@ header ul li a {
 		justify-content: center;
 	}
 	.content .imgBox img {
-		max-width: 300px;
-		max-height: 350px;
+		max-width: 200px;
+		max-height: 250px;
 	}
 	.thumb li img {
 		max-width: 40px;
