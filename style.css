@@ -182,7 +182,7 @@ header ul li a {
 	}
 }
 
-@media (max-width: 448px) {
+@media (max-width: 998px) {
 	heading {
 		padding: 20px;
 	}
@@ -220,7 +220,7 @@ header ul li a {
 	.sci {
 		background: #333;
 		right: 0;
-		width: 35px;
+		width: 33px;
 		border-top-left-radius: 5px;
 		border-bottom-left-radius: 5px;
 	}
